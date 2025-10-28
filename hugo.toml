@@ -14,49 +14,81 @@ theme = 'sv-issa-theme'
     weight = 10
 
   [[menus.main]]
-    name = 'About'
-    pageRef = '/about'
+    name = 'About Us'
     weight = 20
+  [[menus.main]]
+    name = 'Board'
+    pageRef = '/about/sv-issa-board'
+    weight = 1
+    parent = 'About Us'
+  [[menus.main]]
+    name = 'ISSA International'
+    pageRef = '/about/issa-international'
+    weight = 2
+    parent = 'About Us'
 
   [[menus.main]]
-    name = 'Meeting'
-    pageRef = '/meetings'
+    name = 'Meetings'
     weight = 30
+  [[menus.main]]
+    name = 'Upcoming Meeting'
+    weight = 1
+    parent = 'Meetings'
+  [[menus.main]]
+    name = 'Past Meetings'
+    weight = 2
+    pageRef = '/meetings'
+    parent = 'Meetings'
 
+
+  [[menus.main]]
+    name = 'Career Center'
+    weight = 40
   [[menus.main]]
     name = 'Jobs'
+    weight = 1
     pageRef = '/jobs'
-    weight = 40
-
+    parent = 'Career Center'
   [[menus.main]]
     name = 'Certifications'
+    weight = 2
     pageRef = '/certifications'
-    weight = 50
+    parent = 'Career Center'
 
+  [[menus.main]]
+    name = 'Social'
+    weight = 50
   [[menus.main]]
     name = 'Linkedin'
     url = 'https://www.linkedin.com/groups/841137'
-    weight = 60
-
+    weight = 1
+    parent = 'Social'
   [[menus.main]]
     name = 'Slack'
     url = 'https://join.slack.com/t/sv-sf-issa/shared_invite/zt-2q26azbo0-WC_V5mKPF7JCqJXgRJO90Q'
-    weight = 70
+    weight = 2
+    parent = 'Social'
 
+  [[menus.main]]
+    name = 'Participate'
+    weight = 70
   [[menus.main]]
     name = 'Become a Member'
     url = 'https://www.members.issa.org/page/join-now'
-    weight = 80
+    weight = 1
+    parent = 'Participate'
 
   [[menus.main]]
     name = 'Become a Speaker'
     url = 'https://docs.google.com/forms/d/e/1FAIpQLScqgYgVqdDO5JLsLLJLQixk93ZpI8DLZXxuyPUv8L_nRNRjxw/viewform'
-    weight = 90
+    weight = 2
+    parent = 'Participate'
 
   [[menus.main]]
-    name = 'Become a Sponsor'
+    name = 'Sponsor Us'
     url = 'https://docs.google.com/forms/d/e/1FAIpQLScSo5s6jfVYE3Qkfw8CGz1jYHUTSaxSfoMhX7TopaXKnxOpCw/viewform'
-    weight = 95
+    weight = 3
+    parent = 'Participate'
 
 [module]
   [module.hugoVersion]
