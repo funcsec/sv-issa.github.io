@@ -1,0 +1,8 @@
+  <h2>Trainings</h2>
+  {{ $meetings := where site.RegularPages "Type" "trainings" }}
+  {{ range $meetings }}
+    <section>
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      {{ .Summary }}
+    </section>
+  {{ end }}

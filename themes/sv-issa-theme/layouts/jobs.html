@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  <div>Job Title: {{ .Params.job_title }}</div>
+  <div>Job Company: {{ .Params.job_company }}</div>
+  <div>Job Location: {{ .Params.job_location }}</div>
+  <div>Job Posting: <a href='{{ .Params.job_url }}'>{{ .Params.job_url }}</a></div>
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  <div>Published Date: <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+
+
+  
+  {{ .Content }}
+
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}

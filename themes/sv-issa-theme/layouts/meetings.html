@@ -1,0 +1,32 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  <div>Date: {{ .Params.event_date }} {{ .Params.event_time_start }} to {{ .Params.event_time_end }}</div>
+  <div>RSVP: <a href='{{ .Params.event_rsvp_url }}?utm_source=issa_website'>{{ .Params.event_rsvp_url }}</a></div>
+  
+  {{ .Content }}
+  <h2>Sponsors</h2>
+  {{ with .Params.event_sponsors }}
+  {{ range . }}
+  <div><a href="{{ .link }}"><img {{ .link }} src="{{ .logo }}" alt="{{ .name }}"></a></div>
+  {{ end }}
+  {{ end }}
+  <h2>Speakers</h2>
+  {{ with .Params.event_speakers }}
+  {{ range . }}
+  <div><img src={{ .image }} alt={{ .name }}></div>
+  <div>{{ .name }} {{ .title }}</div>
+  <div>{{ .link }}</div>
+  <div>{{ .description }}</div>
+  {{ end }}
+  {{ end }}
+  <h2> Location </h2>
+  <div>Location: {{ .Params.event_location }} {{ .Params.event_address }}
+
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  <div>Published Date: <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+
+{{ end }}

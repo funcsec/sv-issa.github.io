@@ -1,0 +1,63 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-US'
+title = 'Silicon Valley ISSA Chapter'
+theme = 'sv-issa-theme'
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Meeting'
+    pageRef = '/meetings'
+    weight = 30
+
+  [[menus.main]]
+    name = 'Jobs'
+    pageRef = '/jobs'
+    weight = 40
+
+  [[menus.main]]
+    name = 'Certifications'
+    pageRef = '/certifications'
+    weight = 50
+
+  [[menus.main]]
+    name = 'Linkedin'
+    pageRef = 'https://www.linkedin.com/groups/841137'
+    weight = 60
+
+  [[menus.main]]
+    name = 'Slack'
+    pageRef = 'https://join.slack.com/t/sv-sf-issa/shared_invite/zt-2q26azbo0-WC_V5mKPF7JCqJXgRJO90Q'
+    weight = 70
+
+  [[menus.main]]
+    name = 'Become a Member'
+    pageRef = 'https://www.members.issa.org/page/join-now'
+    weight = 80
+
+  [[menus.main]]
+    name = 'Become a Speaker'
+    pageRef = 'https://docs.google.com/forms/d/e/1FAIpQLScqgYgVqdDO5JLsLLJLQixk93ZpI8DLZXxuyPUv8L_nRNRjxw/viewform'
+    weight = 90
+
+  [[menus.main]]
+    name = 'Become a Sponsor'
+    pageRef = 'https://docs.google.com/forms/d/e/1FAIpQLScSo5s6jfVYE3Qkfw8CGz1jYHUTSaxSfoMhX7TopaXKnxOpCw/viewform'
+    weight = 95
+
+
+
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'
