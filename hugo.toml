@@ -3,6 +3,10 @@ languageCode = 'en-US'
 title = 'Silicon Valley ISSA Chapter'
 theme = 'sv-issa-theme'
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [menus]
   [[menus.main]]
     name = 'Home'
@@ -53,9 +57,6 @@ theme = 'sv-issa-theme'
     name = 'Become a Sponsor'
     pageRef = 'https://docs.google.com/forms/d/e/1FAIpQLScSo5s6jfVYE3Qkfw8CGz1jYHUTSaxSfoMhX7TopaXKnxOpCw/viewform'
     weight = 95
-
-
-
 
 [module]
   [module.hugoVersion]
