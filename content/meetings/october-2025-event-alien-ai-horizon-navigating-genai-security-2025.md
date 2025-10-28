@@ -1,6 +1,6 @@
 ---
 title: "October 2025 Event Alien AI Horizon Navigating Genai Security 2025"
-draft: true
+draft: false
 date: 2025-10-26T20:04:46-07:00
 layout: meetings
 params:

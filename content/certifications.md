@@ -1,7 +1,7 @@
 ---
 title: "Certifications"
 date: 2025-10-26T19:30:55-07:00
-draft: true
+draft: false
 ---
 
 Certification is recommended for security professionals for future career advancement and recognition of their unique, specialized skill set. Many security positions now call for one or more specific security certifications, as a condition of employment. Government agencies, such as the Department of Defense (DoD 8570.1), require security specialists be certified.

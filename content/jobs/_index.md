@@ -1,7 +1,7 @@
 ---
 title: "Jobs"
 date: 2025-10-26T19:30:31-07:00
-draft: true
+draft: false
 ---
 
 This section contains current job openings and other helpful resources on career advancement for SV-ISSA members and other Bay Area security professionalis.

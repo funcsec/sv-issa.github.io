@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 expiryDate: {{ .Date }}
-draft: true
+draft: false
 tags: []
 layout: jobs
 params:
